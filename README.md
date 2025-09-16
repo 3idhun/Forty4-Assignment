@@ -1,87 +1,64 @@
-Forty4 Frontend & Backend Assignment
-This repository contains a full-stack user management application. It's built with a React.js frontend for the user dashboard and a Node.js REST API for data handling.
+# Forty4 Frontend & Backend Assignment
 
-Features
-Frontend (User Dashboard)
-Dashboard View: Displays a list of all users.
+This repository contains a **full-stack user management application** built with a **React.js frontend** and a **Node.js + Express.js backend API**.  
+It allows managing users with full **CRUD operations**, a clean **dashboard interface**, and a lightweight **SQLite database**.
 
-User Details Page: Shows detailed information for a single user.
+---
 
-Search Functionality: Allows searching for users by name.
+## ✨ Features
 
-CRUD Operations: A form to add, update, and delete users.
+### Frontend (User Dashboard)
+- 📋 **Dashboard View** – Displays a list of all users.  
+- 👤 **User Details Page** – Shows detailed information for a single user.  
+- 🔍 **Search Functionality** – Search for users by name.  
+- 📝 **CRUD Operations** – Add, update, and delete users.  
+- 📱 **Responsive Design** – Styled with Tailwind CSS for all screen sizes.  
 
-Responsive Design: Styled with Tailwind CSS for various screen sizes.
+### Backend (User Management API)
+- 🌐 **RESTful API** – Complete set of CRUD endpoints for user data.  
+- 🗄️ **SQLite Database** – Lightweight, file-based database.  
+- ✅ **Validation** – Basic validation for required fields.  
+- ⚠️ **Error Handling** – Returns appropriate HTTP status codes and messages.  
 
-Backend (User Management API)
-RESTful API: Provides a complete set of CRUD endpoints for user data.
+---
 
-Database: Uses SQLite, a lightweight, file-based database.
+## 🛠️ Tech Stack
 
-Validation: Includes basic validation for required fields.
+### Frontend
+- [React.js](https://reactjs.org/) – UI library  
+- [React Router DOM](https://reactrouter.com/) – Client-side routing  
+- [Axios](https://axios-http.com/) – API calls  
+- [Tailwind CSS](https://tailwindcss.com/) – Styling  
 
-Error Handling: Returns appropriate HTTP status codes and messages.
+### Backend
+- [Node.js](https://nodejs.org/) & [Express.js](https://expressjs.com/) – Server & API framework  
+- [SQLite3](https://www.sqlite.org/) – Database driver  
+- [CORS](https://www.npmjs.com/package/cors) – Cross-origin requests  
+- [Nodemon](https://www.npmjs.com/package/nodemon) – Development server restarts  
 
-Tech Stack
-Frontend
-React.js: For building the UI.
+---
 
-React Router DOM: For client-side routing.
 
-Axios: For making API calls.
+---
 
-Tailwind CSS: For styling.
+## 🚀 Getting Started
 
-Backend
-Node.js & Express.js: For the server and API framework.
+### ✅ Prerequisites
+- [Node.js](https://nodejs.org/) (LTS recommended)  
+- npm (comes with Node.js)  
 
-SQLite3: The database driver.
+---
 
-CORS: Middleware to handle cross-origin requests.
-
-Nodemon: For automatic server restarts during development.
-
-Project Structure
-The project is divided into two main directories:
-
-user-dashboard/: Contains the complete React frontend.
-
-user-management-api/: Contains the complete Node.js backend API.
-
-Getting Started
-Prerequisites
-Node.js (LTS version recommended)
-
-npm (comes with Node.js)
-
-Step 1: Clone the Repository
-Bash
-
+### 1. Clone the Repository
+```bash
 git clone <your-repository-url>
 cd <your-repository-name>
-Step 2: Set Up the Backend
-Navigate to the backend directory:
 
-Bash
+---
 
 cd user-management-api
-Install dependencies and start the server:
-
-Bash
-
 npm install
 npm start
 
 
-Step 3: Set Up the Frontend
-Open a new terminal and navigate to the frontend directory:
 
-Bash
-
-cd user-dashboard
-Install dependencies and start the app:
-
-
-POST	/	Create a new user.
-PUT	/:id	Update an existing user.
-DELETE	/:id	Delete a user.
